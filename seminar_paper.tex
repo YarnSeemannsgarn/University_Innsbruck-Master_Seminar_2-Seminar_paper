@@ -1,0 +1,50 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+%\usepackage{lmodern}
+%\usepackage{hyperref}
+\usepackage{nohyperref} % This makes hyperref commands do nothing without errors
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{seqsplit} 
+\usepackage{varioref} % for vref
+\usepackage{tabularx}
+\usepackage{tabulary}
+\usepackage{enumerate}
+\usepackage[acronym]{glossaries}
+
+\include{abbreviations}
+\makeglossaries
+
+% Variables
+\renewcommand{\title}{Ransomware: A systematic overview}
+\renewcommand{\author}{Jan Schlenker}
+
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+
+\setlength{\parindent}{0pt} % no indent after figure
+\setlength{\skip\footins}{1cm} % indent before footnote
+
+% ******************** BEGIN OF DOCUMENT ********************
+\begin{document}
+
+\include{titlepage}
+%\include{01_abstract}
+
+\tableofcontents
+\newpage
+
+\printglossary[title=List of Acronyms, type=\acronymtype]
+\listoffigures
+\listoftables
+
+\include{introduction}
+
+\bibliographystyle{unsrt}
+\bibliography{bibliography}
+
+\include{declaration_of_authorship}
+
+\end{document}
+% ******************** END OF DOCUMENT ********************
