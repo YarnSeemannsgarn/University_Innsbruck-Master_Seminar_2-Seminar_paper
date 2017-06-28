@@ -1,0 +1,15 @@
+\section{What is Ransomware?}
+
+Ransomware in general is a malicious software, that denies access to the files of the victim or/and threatens to publish them. Most of the time it is distinguished by researchers into 2 major types:
+
+\begin{description}
+\item[File lockers:] The most common ransomware type, also known as ``crypto trojan'' or ``crypto ransomware''. Here the files of the victim are usually encrypted and the attacker demands the ransom for the decryption. Some variants do not encrypt the files but deny the access to the files in some other way, for example by putting them into a password protected archive \cite{Symantec2017a}.
+  
+\item[Screen lockers:] Here the victims access to its system is denied, mostly by changing the password or the pin. The attacker demands the ransom for the new authentication code.
+\end{description} 
+
+Pure screen lockers are not as dangerous as file lockers, because the (personal) files of the victim are not touched and can be recovered by accessing the hardrive from another system. However, file and screen lockers can be combined, which prevents this recovering technique.\\
+\\
+Some sources name ``Leakware'' also known as ``Doxware'' as a third ransomware type \cite{Upadhaya2017}, where the attacker demands the ransom for not publishing the data of the victim. Companies can be targets, which do not want to share crucial data with their competitors, but also individuals, which for example have intimate photos on their device. Likewise this type can be combined with screen and file lockers.\\
+\\
+In contrast to other malware, ransomware reveals itself to the victim at some point (e.g. when the files are encrypted). Traditional malware rather aims to achieve stealth for collecting banking credentials or keystrokes without raising suspicion \cite{Kirda2017}. Ransomware on the other hand wants to get the attention of the victim to demand the ransom.
