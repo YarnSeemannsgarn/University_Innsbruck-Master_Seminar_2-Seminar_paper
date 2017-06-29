@@ -1,0 +1,13 @@
+\section{Recent Work \& Future of Ransomware}
+
+With the growing impact of ransomware, the research about it also grew. Many recent papers suggest methods to automatically detect new ransomware \cite{Kolodenker2017}\cite{Kirda2017}\cite{Continella2016}\cite{Moore2016}\cite{Ahmadian2016}\cite{Shukla2016}, some specifically for Android devices \cite{Maiorca2017}\cite{Andronio2015}\cite{Yang2015}. A common approach here is to create some kind of virtual environment to measure file I/O activities for the detection. Moreover the PayBreak paper \cite{Kolodenker2017} provides a method to store session keys for every encryption inside a vault, so that files can be decrypted without paying a ransom. Other papers address the evolution, mitigation and prevention of ransomware \cite{Gupta2017}\cite{Richardson2017}\cite{Shinde2016}\cite{Nagpal2016}\cite{Zavarsky2016}.\\
+\\
+Right now there is no well-established concept to protect users, both business and private ones, from novel ransomware attacks. Of course general prevention and mitigation methods like automated backups, automated system patches and education can help to decrease the risk, but these techniques are not well implemented by everybody, which was shown by the attacks of the recent years. It will be interesting to see, whether some kind of automatic detection of new ransomware will be part of an anti-virus software. \\
+\\
+Some recent technologies can also influence ransomware in the future. Namely these are:
+
+\begin{description}
+\item[\gls{iot}:] Right now ransomware mainly infects servers, personal computers and mobile phones. Attackers could also target more things connected to the internet like ``smart watches'' or ``connected cars'' \cite{Cobb2017}. Security updates for specific firm wares are often not as soon released as widely-spread operating system updates, if at all.
+\item[Smart Contracts:] Smart contracts are protocols, which are intended to facilitate, verify or enforce real world contracts. On some blockchains like Etherum smart contracts can be defined to interact with crypto currencies. Together with a custodian that can be implemented using tamper-resistant hardware or cryptographic obfuscation techniques, so called ``autonomous ransomware'' could be possible \cite{Kaptchuk2017}\cite{Juels2016}. With this there is no need for a \gls{candc} server, because the infection as well as the decryption can happen autonomously.
+\end{description} 
+
